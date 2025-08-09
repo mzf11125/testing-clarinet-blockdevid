@@ -1,0 +1,15 @@
+[project]
+name = "tictactoe"
+description = "A betting-based Tic Tac Toe game on Stacks blockchain"
+authors = ["Your Name <your.email@example.com>"]
+telemetry = true
+cache_dir = "./.clarinet"
+
+[contracts.tic-tac-toe]
+path = "contracts/tic-tac-toe.clar"
+clarity_version = 2
+epoch = 2.4
+
+[repl]
+costs_version = 2
+parser_version = 2

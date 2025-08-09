@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: tic-tac-toe
+            expected-sender: ST2TG9G3H0WD4Q69CXZ5KW973RFX5XGHD54TGX5PR
+            cost: 110580
+            path: contracts/tic-tac-toe.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.4"
