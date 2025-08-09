@@ -1,4 +1,4 @@
-import { GamesList } from "@/components/game-list";
+import { GamesList } from "@/components/games-list";
 import { getAllGames } from "@/lib/contract";
 
 export const dynamic = "force-dynamic";
