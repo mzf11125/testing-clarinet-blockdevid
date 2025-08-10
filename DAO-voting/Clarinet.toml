@@ -5,9 +5,16 @@ authors = []
 telemetry = false
 cache_dir = "./.cache"
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
-# epoch = "latest"
+
+[contracts.DaoToken]
+path = "contracts/dao/DaoToken.clar"
+epoch = "latest"
+
+[contracts.Governed]
+path = "contracts/dao/Governed.clar"
+epoch = "latest"
+
+
 
 [repl.analysis]
 passes = ["check_checker"]

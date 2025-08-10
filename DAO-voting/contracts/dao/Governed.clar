@@ -1,0 +1,1 @@
+;; The smart contract governance.clar defines the governance structure for a blockchain application.
