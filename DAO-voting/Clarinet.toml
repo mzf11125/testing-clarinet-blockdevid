@@ -1,10 +1,9 @@
 [project]
 name = "DAO-voting"
-description = ""
+description = "Comprehensive DAO system with modular architecture following diamond pattern"
 authors = []
 telemetry = false
 cache_dir = "./.cache"
-
 
 [contracts.DaoToken]
 path = "contracts/dao/DaoToken.clar"
@@ -14,7 +13,41 @@ epoch = "latest"
 path = "contracts/dao/Governed.clar"
 epoch = "latest"
 
+[contracts.Treasury]
+path = "contracts/dao/Treasury.clar"
+epoch = "latest"
 
+[contracts.ProposalExecutor]
+path = "contracts/dao/ProposalExecutor.clar"
+epoch = "latest"
+
+[contracts.VotingStrategy]
+path = "contracts/dao/VotingStrategy.clar"
+epoch = "latest"
+
+[contracts.DaoFactory]
+path = "contracts/dao/DaoFactory.clar"
+epoch = "latest"
+
+[contracts.AccessControl]
+path = "contracts/dao/AccessControl.clar"
+epoch = "latest"
+
+[contracts.Timelock]
+path = "contracts/dao/Timelock.clar"
+epoch = "latest"
+
+[contracts.Multisig]
+path = "contracts/dao/Multisig.clar"
+epoch = "latest"
+
+[contracts.Events]
+path = "contracts/dao/Events.clar"
+epoch = "latest"
+
+[contracts.DaoIntegration]
+path = "contracts/dao/DaoIntegration.clar"
+epoch = "latest"
 
 [repl.analysis]
 passes = ["check_checker"]
